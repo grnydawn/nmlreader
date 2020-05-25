@@ -6,7 +6,7 @@ def main():
     from nmlreader import NMLReader as nmlr
 
     console_scripts = ["nmlreader=nmlreader.__main__:main"]
-    install_requires = ["microapp>=0.1.3", "f90nml>=1.2"]
+    install_requires = ["microapp>=0.2.3", "f90nml>=1.2"]
 
     setup(
         name=nmlr._name_,

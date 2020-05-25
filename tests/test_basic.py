@@ -11,7 +11,7 @@ def test_basic():
     nml = os.path.join(here, "..", "res", "e3sm_atm_in")
     cmd = "%s %s" % (rdr, nml)
 
-    ret = prj.main(cmd)
+    ret, fwds = prj.run_command(cmd)
 
     assert ret == 0
 #
